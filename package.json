@@ -8,6 +8,7 @@
     "react-router": "^3.2.0",
     "react-scripts": "1.0.14",
     "react-waypoint": "^7.3.1",
+    "really-smooth-scroll": "^2.1.1",
     "styled-components": "^2.2.1"
   },
   "scripts": {
