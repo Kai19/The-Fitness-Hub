@@ -24,9 +24,9 @@ export const HeroImage = styled.div`
 
 
 .square {
-  top: 250px;
-  width: 400px;
-  height: 500px;
+  top: 140px;
+  width: 380px;
+  height: 370px;
   position: relative;
   margin: auto;
   transform: translateY(-50%);
@@ -83,9 +83,9 @@ export const HeroImage = styled.div`
 }
 
 .square .text {
-  padding-left: 50px;
+  padding-left: 85px;
   background: none;
-  font-size: 4.5em;
+  font-size: 3em;
   line-height: 1;
   font-weight: bold;
   letter-spacing: 10px;
