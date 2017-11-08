@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import { NavigationContainer, NavItem } from './NavigationBar.style';
-import ReallySmoothScroll from 'really-smooth-scroll';
-import { hashHistory } from 'react-router';
+// import ReallySmoothScroll from 'really-smooth-scroll';
+// import { hashHistory } from 'react-router';
 
-hashHistory.listen(() => {
-  window.scrollTo(0,0);
-});
+// hashHistory.listen(() => {
+//   window.scrollTo(0,0);
+// });
 
-ReallySmoothScroll.shim();
+// ReallySmoothScroll.shim();
 
 class NavigationBar extends Component {
   render() {
     return (
       <NavigationContainer>
-          <NavItem to="/">Home</NavItem>
-          <NavItem>About</NavItem>
-          <NavItem>Location</NavItem>
-          <NavItem>Contact</NavItem>
+          <NavItem href="/">Home</NavItem>
+          <NavItem href="#About">About</NavItem>
+          <NavItem href="#Location">Location</NavItem>
+          <NavItem href="#Contact">Contact</NavItem>
       </NavigationContainer>
     );
   }
