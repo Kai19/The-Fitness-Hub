@@ -19,7 +19,8 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <!-- <script src="../src/scripts/scrollTo.js"></script> -->
+    <title>The Fitness Hub</title>
   </head>
   <body>
     <noscript>
@@ -29,12 +30,28 @@
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
-
+      
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
+        
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+      <script src="https://code.jquery.com/jquery-3.1.0.js" </script>
+        crossorigin="anonymous"></script>
+      <script>
+        $(document).ready(function () {
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          var scrollLink = $('a');
+
+          // Smooth scrolling
+          scrollLink.click(function (e) {
+            e.preventDefault();
+            $('body,html').animate({
+              scrollTop: $(this.hash).offset().top
+            }, 1000);
+          });
+        });
+      </script>
   </body>
 </html>
