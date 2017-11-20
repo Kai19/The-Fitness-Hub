@@ -14,9 +14,9 @@ class NavigationBar extends Component {
   render() {
     return (
       <div>
-        <img id="logo" src={logo} />
+        <span id="top" />
         <NavigationContainer>
-          <NavItem href="#logo">Home</NavItem>
+          <NavItem href="#top">Home</NavItem>
           <NavItem href="#About">About</NavItem>
           <NavItem href="#Location">Location</NavItem>
           <NavItem href="#Contact">Contact</NavItem>

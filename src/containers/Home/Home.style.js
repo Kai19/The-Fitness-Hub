@@ -413,6 +413,7 @@ export const HeroImage = styled.div`
 `;
 
 export const RevealP = styled.p`
+  font-size: 22px;
   color: white;
   position: relative;
   padding-left: 200px;

@@ -52,7 +52,7 @@ export default class Home extends Component {
           {({ isInView }) =>
             <RevealP hide={!isInView} id="Contact" >
               <p>Contact Us</p>
-              <p>Shireen@thefitnesshub.org</p>
+              <p>info@thefitnesshub.org</p>
             </RevealP>
           }
         </WhenInView>
