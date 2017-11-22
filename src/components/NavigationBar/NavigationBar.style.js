@@ -8,7 +8,12 @@ export const NavigationContainer = styled.div`
   `;
   
   export const NavItem = styled(Link)`
+    padding-top: 10px;
+    font-size: 13px;
     color: white;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
@@ -18,6 +23,6 @@ export const NavigationContainer = styled.div`
     &:hover {
       color: orange;
     }
-
+    z-index: 1000;
 `
     

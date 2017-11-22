@@ -6,7 +6,7 @@ export const Image = styled.img`
 
 export const HeroImage = styled.div`
   height: 100vh;
-  background-image: url(${require('../../assets/hero.jpg')});
+  background-image: url(${require('../../assets/interior3.jpg')});
   background-repeact: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,9 +24,9 @@ export const HeroImage = styled.div`
 
 
 .square {
-  top: 140px;
+  top: 180px;
   width: 380px;
-  height: 370px;
+  height: 420px;
   position: relative;
   margin: auto;
   transform: translateY(-50%);
@@ -43,7 +43,7 @@ export const HeroImage = styled.div`
 }
 
 .square .line-top {
-  height: 20px;
+  height: 12px;
   width: 100%;
   top: 0;
   left: 0;
@@ -52,14 +52,14 @@ export const HeroImage = styled.div`
 
 .square .line-right {
   height: 100%;
-  width: 20px;
+  width: 12px;
   top: 0;
   right: 0;
   animation: lineRight 0.8s cubic-bezier(0.05, 0.79, 0.82, 0.31);
 }
 
 .square .line-bottom {
-  height: 20px;
+  height: 12px;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -68,7 +68,7 @@ export const HeroImage = styled.div`
 
 .square .line-left {
   height: 100%;
-  width: 20px;
+  width: 12px;
   top: 0;
   left: 0;
   transform: translateY(60%);
@@ -83,22 +83,23 @@ export const HeroImage = styled.div`
 }
 
 .square .text {
-  padding-left: 85px;
+  padding-top: 50px;
   background: none;
-  font-size: 3em;
-  line-height: 1;
+  font-size: 4.5em;
+  // line-height: 1;
   font-weight: bold;
   letter-spacing: 10px;
   text-transform: uppercase;
   opacity: 0;
   animation: moveIn 0s 1.4s cubic-bezier(0.35, 1.1, 0.57, 0.76) forwards;
-  font-family: 'Oswald',
+  font-family: 'Times New Roman', Times, serif,
   sans-serif;
   z-index:100;
 }
 
 .square .text p {
-  color: white;
+  margin: 10px;
+  color: black;
 }
 
 .glow:hover {
@@ -414,10 +415,14 @@ export const HeroImage = styled.div`
 
 export const RevealP = styled.p`
   font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
   color: white;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
   position: relative;
-  padding-left: 200px;
   display: inline-block;
+  z-index: -100;
   &:after {
     content: ' ';
     position: absolute;

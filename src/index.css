@@ -4,20 +4,45 @@ body {
   font-family: sans-serif;
 }
 
-img#logo {
+/* img#logo {
   width: 40px;
   height: 30px;
   float: left;
   position: relative;
   z-index: 1000;
-}
+} */
 
 #About {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .Coming {
-  color: #ff5700;
-  font-size: 50px;
+  color: black;
+  font-size: 28px;
   z-index: 1000;
+  font-weight: bold; 
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+
+#border {
+  border-style: solid;
+  border-color: white;
+  padding: 20px;
+}
+
+#title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#bold {
+  font-weight: bold;
 }
