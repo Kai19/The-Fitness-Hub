@@ -25,14 +25,15 @@ export const HeroImage = styled.div`
 
 .square {
   top: 180px;
-  width: 380px;
-  height: 420px;
+  width: 390px;
+  height: 430px;
   position: relative;
   margin: auto;
   transform: translateY(-50%);
   overflow: hidden;
   animation: movinInBlock 1s ease-out;
   z-index: 10;
+  // background-color: rgba(255, 255, 255, 0.3);
 }
 
 .square div {
@@ -100,6 +101,8 @@ export const HeroImage = styled.div`
 .square .text p {
   margin: 10px;
   color: black;
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: white;
 }
 
 .glow:hover {
