@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavigationContainer, NavItem } from './NavigationBar.style';
-import logo from '../../assets/LOGO-v1.jpg'
+import logo from '../../assets/logo.png'
 // import ReallySmoothScroll from 'really-smooth-scroll';
 // import { hashHistory } from 'react-router';
 
@@ -15,7 +15,7 @@ class NavigationBar extends Component {
     return (
       <div>
         <span id="top" />
-        {/* <img id="logo" src={logo} /> */}
+        {<img id="logo" src={logo} />}
         <NavigationContainer>
           <NavItem href="#top">Home</NavItem>
           <NavItem href="#About">About</NavItem>
