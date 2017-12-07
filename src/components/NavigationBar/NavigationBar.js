@@ -15,7 +15,7 @@ class NavigationBar extends Component {
     return (
       <div>
         <span id="top" />
-        {<img id="logo" src={logo} />}
+        <img id="logo" src={logo} />
         <NavigationContainer>
           <NavItem href="#top">Home</NavItem>
           <NavItem href="#About">About</NavItem>

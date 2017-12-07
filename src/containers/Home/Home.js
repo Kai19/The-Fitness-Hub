@@ -8,6 +8,8 @@ import {
 } from './Home.style';
 import WhenInView from '../../components/WhenInView/WhenInView'
 
+import logo from '../../assets/abt.png'
+
 export default class Home extends Component {
   static protoTypes = {};
 
@@ -34,11 +36,12 @@ export default class Home extends Component {
         <WhenInView>
           {({ isInView }) => 
             <RevealP hide={!isInView} id="About" >
-              <div id="border">
+              {/* <div id="border"> */}
+               <img id="AbtLogo" src={logo} />
                <p id="title">About Us</p>
                <p>The Fitness Hub is an exclusive boutique gym offering a safe, clean and high-quality fitness programme tailored to suit the individual and small group classes. As a first-class fitness facility, TFH promises to deliver the highest level of personal service and attention to its clients</p>
                <p>TFH aims to offer a unique style of fitness training geared towards clients who are seeking long term results, a better lifestyle as a result of being fit and a healthier body and mind.</p>
-              </div>
+              {/* </div> */}
             </RevealP>
           }
         </WhenInView>

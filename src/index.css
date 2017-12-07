@@ -14,12 +14,13 @@ img#logo {
 }
 
 #About {
-  padding-top: 40px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .Coming {
   color: black;
-  font-size: 28px;
+  font-size: 35px;
   z-index: 1000;
   font-weight: bold; 
   font-family: 'Times New Roman', Times, serif;
@@ -46,4 +47,32 @@ ul {
 
 #bold {
   font-weight: bold;
+}
+
+#AbtLogo {
+  height: 400px;
+  width: 400px;
+}
+
+@media screen and (max-width:667px){
+  #AbtLogo {
+    height: 200px;
+    width: 200px;
+    padding-right: 50px;
+  }
+
+  #About {
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 100%;
+  }
+
+  img#logo {
+    visibility: hidden;
+  }
+
+  .Coming {
+    font-size: 20px;
+    padding-top: 20px;
+  }
 }

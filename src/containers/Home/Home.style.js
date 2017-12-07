@@ -1,4 +1,5 @@
 import styled, {css} from 'styled-components';
+import media from '../../theme/media';
 
 export const Image = styled.img`
   width: 100%;
@@ -20,13 +21,16 @@ export const HeroImage = styled.div`
   colour: white;
 
   @import url("https://fonts.googleapis.com/css?family=Oswald:700");
-
-
+  
+  ${media.phone`
+    height: 50vh;
+    background-width: auto;
+  `}
 
 .square {
   top: 180px;
-  width: 390px;
-  height: 430px;
+  width: 480px;
+  height: 520px;
   position: relative;
   margin: auto;
   transform: translateY(-50%);
@@ -34,6 +38,12 @@ export const HeroImage = styled.div`
   animation: movinInBlock 1s ease-out;
   z-index: 10;
   // background-color: rgba(255, 255, 255, 0.3);
+
+  ${media.phone`
+    top: 110px;
+    width: 200px;
+    height: 200px;
+  `}
 }
 
 .square div {
@@ -84,9 +94,10 @@ export const HeroImage = styled.div`
 }
 
 .square .text {
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-left: 30px;
   background: none;
-  font-size: 4.5em;
+  font-size: 5em;
   // line-height: 1;
   font-weight: bold;
   letter-spacing: 10px;
@@ -96,6 +107,11 @@ export const HeroImage = styled.div`
   font-family: 'Times New Roman', Times, serif,
   sans-serif;
   z-index:100;
+  ${media.phone`
+    font-size: 20px;
+    bottom: 40px;
+    right: 10px;
+  `}
 }
 
 .square .text p {
@@ -105,7 +121,7 @@ export const HeroImage = styled.div`
   // -webkit-text-stroke-color: white;
 }
 
-.glow:hover {
+.glow {
   z-index:1000;
   border-bottom: 10px;
   -webkit-animation: neon5 1.5s ease-in-out infinite alternate;
@@ -416,7 +432,7 @@ export const HeroImage = styled.div`
 
 `;
 
-export const RevealP = styled.p`
+export const RevealP = styled.span`
   font-size: 22px;
   font-family: 'Times New Roman', Times, serif;
   color: white;
