@@ -13,10 +13,6 @@ img#logo {
   z-index: 1000;
 }
 
-#About {
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
 
 .Coming {
   color: black;
@@ -37,7 +33,7 @@ img#logo {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 ul {
@@ -49,22 +45,36 @@ ul {
   font-weight: bold;
 }
 
-#AbtLogo {
+img#abtLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 400px;
   width: 400px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width:1024px){
+  .Coming {
+    font-size: 35px;
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width:667px){
-  #AbtLogo {
+  img#abtLogo {
     height: 200px;
     width: 200px;
-    padding-right: 50px;
   }
 
-  #About {
-    padding-right: 5px;
-    padding-left: 5px;
-    width: 100%;
+  #abtTag {
+    padding-top: 40px;
+  }
+
+  #abtInfo {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   img#logo {
@@ -74,5 +84,36 @@ ul {
   .Coming {
     font-size: 20px;
     padding-top: 20px;
+  }
+
+  #map {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:568px){
+  #abtLogo {
+    height: 200px;
+    width: 200px;
+  }
+
+  #abtInfo {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  img#logo {
+    visibility: hidden;
+  }
+
+  .Coming {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  #map {
+    height: 200px;
+    width: 300px;
   }
 }

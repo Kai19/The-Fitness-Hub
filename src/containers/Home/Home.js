@@ -33,15 +33,13 @@ export default class Home extends Component {
           </div>
           <div className="Coming">Coming Soon</div>
         </HeroImage>
+        <img id="abtLogo" src={logo} />
         <WhenInView>
           {({ isInView }) => 
             <RevealP hide={!isInView} id="About" >
-              {/* <div id="border"> */}
-               <img id="AbtLogo" src={logo} />
-               <p id="title">About Us</p>
-               <p>The Fitness Hub is an exclusive boutique gym offering a safe, clean and high-quality fitness programme tailored to suit the individual and small group classes. As a first-class fitness facility, TFH promises to deliver the highest level of personal service and attention to its clients</p>
-               <p>TFH aims to offer a unique style of fitness training geared towards clients who are seeking long term results, a better lifestyle as a result of being fit and a healthier body and mind.</p>
-              {/* </div> */}
+              <p id="title">About Us</p>
+              <p id="abtInfo">The Fitness Hub is an exclusive boutique gym offering a safe, clean and high-quality fitness programme tailored to suit the individual and small group classes. As a first-class fitness facility, TFH promises to deliver the highest level of personal service and attention to its clients</p>
+              <p id="abtInfo">TFH aims to offer a unique style of fitness training geared towards clients who are seeking long term results, a better lifestyle as a result of being fit and a healthier body and mind.</p>
             </RevealP>
           }
         </WhenInView>
@@ -49,7 +47,7 @@ export default class Home extends Component {
           {({ isInView }) =>
             <RevealP hide={!isInView} id="Location" >
               <p id="title">Find Us at</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.209552129807!2d103.86436!3d1.309576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb22bb04136d8582!2sAperia+Mall!5e0!3m2!1sen!2ssg!4v1510168144228" width="600" height="450" frameborder="0" styles="border:0" allowfullscreen></iframe>
+              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.209552129807!2d103.86436!3d1.309576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb22bb04136d8582!2sAperia+Mall!5e0!3m2!1sen!2ssg!4v1510168144228" width="600" height="450" frameborder="0" styles="border:0" allowfullscreen></iframe>
               <p>Address: 12 Kallang Avenue , #02-01, Aperia Mall, Spore 339511</p>
             </RevealP>
           }

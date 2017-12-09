@@ -7,8 +7,16 @@ export const NavigationContainer = styled.div`
   right: 0;
   right: 2em;
 
+  ${media.tablet`
+    margin-left: auto;
+    margin-right: auto;
+  `}
+
   ${media.phone`
-    left: 0;
+    display: inline-block;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
   `}
 `;
   
@@ -30,8 +38,16 @@ export const NavItem = styled(Link)`
   }
   z-index: 1000;
 
-  ${media.phone`
+  ${media.tablet`
     font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+  `}
+
+  ${media.phone`
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   `}
 `
     

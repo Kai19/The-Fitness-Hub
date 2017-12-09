@@ -22,13 +22,18 @@ export const HeroImage = styled.div`
 
   @import url("https://fonts.googleapis.com/css?family=Oswald:700");
   
+  ${media.tablet`
+    height: 50vh;
+    background-width: auto;
+  `}
+
   ${media.phone`
     height: 50vh;
     background-width: auto;
   `}
 
 .square {
-  top: 180px;
+  top: 225px;
   width: 480px;
   height: 520px;
   position: relative;
@@ -38,6 +43,18 @@ export const HeroImage = styled.div`
   animation: movinInBlock 1s ease-out;
   z-index: 10;
   // background-color: rgba(255, 255, 255, 0.3);
+  
+  ${media.tablet`
+    top: 200px;
+    width: 350px;
+    height: 350px;
+  `}
+
+  ${media.phonePlus`
+    top: 110px;
+    width: 250px;
+    height: 250px;
+  `}
 
   ${media.phone`
     top: 110px;
@@ -59,6 +76,12 @@ export const HeroImage = styled.div`
   top: 0;
   left: 0;
   animation: lineTop 0.8s cubic-bezier(0.05, 0.79, 0.82, 0.31);
+  ${media.phonePlus`
+    height: 10px;
+  `}
+  ${media.phone`
+    height: 8px;
+  `}
 }
 
 .square .line-right {
@@ -67,6 +90,12 @@ export const HeroImage = styled.div`
   top: 0;
   right: 0;
   animation: lineRight 0.8s cubic-bezier(0.05, 0.79, 0.82, 0.31);
+  ${media.phonePlus`
+    width: 10px;
+  `}
+  ${media.phone`
+    width: 8px;
+  `}
 }
 
 .square .line-bottom {
@@ -75,6 +104,12 @@ export const HeroImage = styled.div`
   bottom: 0;
   left: 0;
   animation: lineBottom 0.8s cubic-bezier(0.05, 0.79, 0.82, 0.31);
+  ${media.phonePlus`
+    height: 10px;
+  `}
+  ${media.phone`
+    height: 8px;
+  `}
 }
 
 .square .line-left {
@@ -84,6 +119,12 @@ export const HeroImage = styled.div`
   left: 0;
   transform: translateY(60%);
   animation: lineLeft 0.8s cubic-bezier(0.05, 0.79, 0.82, 0.31);
+  ${media.phonePlus`
+    width: 10px;
+  `}
+  ${media.phone`
+    width: 8px;
+  `}
 }
 
 .square .black-mask {
@@ -107,10 +148,23 @@ export const HeroImage = styled.div`
   font-family: 'Times New Roman', Times, serif,
   sans-serif;
   z-index:100;
+  ${media.tablet`
+    font-size: 50px;
+    font-weight: bold;
+    bottom: 60px;
+  `}
+
+  ${media.phonePlus`
+    font-size: 30px;
+    font-weight: bold;
+    right: 15px;
+  `}
+
   ${media.phone`
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     bottom: 40px;
-    right: 10px;
+    right:0px;
   `}
 }
 
